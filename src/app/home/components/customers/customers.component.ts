@@ -1,5 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import { ImageConfig } from 'src/app/shared/types/image.config';
 import { SwiperOptions } from 'swiper';
 import { SwiperComponent } from 'swiper/angular';
 
@@ -16,6 +17,8 @@ interface Customer {
   styleUrls: ['./customers.component.scss'],
 })
 export class CustomersComponent {
+  public imageConfig = ImageConfig;
+
   faAngleLeft = faAngleLeft;
   faAngleRight = faAngleRight;
 

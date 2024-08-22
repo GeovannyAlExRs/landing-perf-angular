@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ImageConfig } from 'src/app/shared/types/image.config';
 
 @Component({
   selector: 'app-summary',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./summary.component.scss'],
 })
 export class SummaryComponent {
-  constructor() {}
+  public imageConfig = ImageConfig;
 }

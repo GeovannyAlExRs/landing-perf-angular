@@ -8,11 +8,12 @@
   </div>
   <div class="stats__block">
     <div class="flex--horizontal">
-      <h5 class="stats__name">A/B Split</h5>
-      <h4 class="font-fjalla stats__result">A/B</h4>
+      <h4 class="stats__name">A/B Split</h4>
+      <h5 class="font-fjalla stats__result">A/B</h5>
     </div>
     <div class="stats">
       <canvas
+        *ngIf="isBrowser"
         baseChart
         [type]="'line'"
         [data]="dataSet1"
@@ -30,6 +31,7 @@
     </div>
     <div class="stats">
       <canvas
+        *ngIf="isBrowser"
         baseChart
         [type]="'bar'"
         [data]="dataSet2"
@@ -47,6 +49,7 @@
     </div>
     <div class="stats">
       <canvas
+        *ngIf="isBrowser"
         baseChart
         [type]="'line'"
         [data]="dataSet3"
@@ -64,6 +67,7 @@
     </div>
     <div class="stats">
       <canvas
+        *ngIf="isBrowser"
         baseChart
         [type]="'line'"
         [data]="dataSet4"
@@ -81,6 +85,7 @@
     </div>
     <div class="stats">
       <canvas
+        *ngIf="isBrowser"
         baseChart
         [type]="'bar'"
         [data]="dataSet5"
@@ -98,6 +103,7 @@
     </div>
     <div class="stats">
       <canvas
+        *ngIf="isBrowser"
         baseChart
         [type]="'line'"
         [data]="dataSet6"

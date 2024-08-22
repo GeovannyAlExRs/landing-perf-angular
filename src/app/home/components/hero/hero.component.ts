@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ImageConfig } from 'src/app/shared/types/image.config';
 
 @Component({
   selector: 'app-hero',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./hero.component.scss'],
 })
 export class HeroComponent {
-  constructor() {}
+  public imageConfig = ImageConfig;
 }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ImageConfig } from 'src/app/shared/types/image.config';
 
 @Component({
   selector: 'app-integrations',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./integrations.component.scss'],
 })
 export class IntegrationsComponent {
-  constructor() {}
+  public imageConfig = ImageConfig;
 }
